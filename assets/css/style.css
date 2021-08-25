@@ -155,6 +155,12 @@ main{
     background-repeat: no-repeat; 
     background-size: cover;
 }
+section.game iframe{
+    background-color: yellow;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
 /* .unity.one{
     max-width: 100%;
     background-color: black;
