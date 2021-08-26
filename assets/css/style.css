@@ -27,13 +27,14 @@ header{
     width: 100%;
     padding: 10px;
     /* padding-left: 30px; */
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: fixed;
-    margin-bottom: 50px;
-    height: 58px;
+    margin-bottom: 50px;    
+}
+ul{
+    height: 43px;
 }
 /* .logo{
     left: 0px;
@@ -83,10 +84,10 @@ a.title:hover{
 .primary ul{
     right: 0px;
     top: 0px;
-    height: 80px;
+    /* height: 80px; */
 	list-style:none;
 	position: fixed;
-    background: #22425E;
+    background: #095051;
     color: white;
 	margin:0;
     padding-left: 70px;
@@ -100,10 +101,11 @@ a.title:hover{
 	color: white; 
 	text-decoration:none;
 	font-weight:400;
-	font-size: 22px;
+	font-size: 15px;
 	line-height:32px;
-	padding: 15px 25px;
-	background: #22425E;
+	padding-left: 15px ;
+	padding-right: 80px ;
+	background: #095051;
 	font-family: 'Open Sans', sans-serif;
     -webkit-transition: all 150ms linear;
     -moz-transition: all 150ms linear;
@@ -127,8 +129,10 @@ a.title:hover{
     transition: all 150ms linear;
 }
 li a.homePage{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* color: red; */
+    display: flex;
+    flex-direction: column;
 }
 .primary ul a:active
 {
@@ -152,11 +156,12 @@ li a.homePage{
     background-color: #222326; 
 }
 main{
+    /* margin: 0px; */
     /* position: relative; */
     max-width: 100%;
-    height: 90vh;
-    /* background-image:inherit; */
-    background-image:url("../img/mainImgSmall.png") ;
+    height: 100vh;
+    background-image:inherit;
+    background-image:url("../img/mailImgfinal.png") ;
     object-fit: cover;
     background-repeat: no-repeat; 
     /* background-position: center; */
@@ -167,29 +172,42 @@ main{
 main img{
     /* object-fit: cover; */
     /* position: relative; */
-
+/* margin-top: 188px; */
     width: 100%;
-    height: 110%;
+    height: 120%;
 }
 .description{
     /* margin-top: 340px;  */
     /* position: absolute; */
 }
 div.title,
-div.text{
+div.text,
+div.interactive{
     width: 100%;
+}
+div.interactive p{
+    width: 170px;
+    height: 14px;
+    margin-left: 100px;
+    margin-top: 290px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 div.title h1{
     /* position: static; */
-    width: 536px;
+    width: 405px;
     height: 83px;
     margin-left: 100px;
-    margin-top: 250px;    
+    margin-top: -15px;    
     font-family: 'Sriracha';
     font-style: normal;
     font-weight: normal;
-    font-size: 72px;
-    line-height: 127px;
+    font-size: 54px;
+    line-height: 96px;
     color: #FFFFFF;   
     /* position: absolute; */
 /* width: 118px; */
@@ -200,58 +218,71 @@ left: 120px; */
 /* border: 4px solid #FFFFFF;  */
 
 }
+svg.underline {
+    margin-left: 100px;
+    margin-top: -32px;
+
+}
 div.text p{
-    width: 428px;
-    height: 90px;
-    margin-left: 120px;
-    margin-top: 63px;
+    width: 296px;
+    height: 67px;
+    margin-left: 100px;
+    margin-top: 30px;
     font-family: 'open sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 15px;
+    line-height: 20px;
     color: #FFFFFF;
 }
 button.story{
-    /* display: flex; */
-/* flex-direction: row; */
-justify-content: center;
-align-items: center;
-padding: 15px 44px;
-
-/* position: absolute; */
-width: 213px;
-height: 58px;
-/* left: 120px; */
-/* top: 728px; */
-
-background: #FFFFFF;
-border-radius: 100px;
-position: static;
-/* width: 125px; */
-/* height: 28px; */
-/* left: 44px; */
-/* top: 15px; */
-
-font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: 0.05em;
-
-color: #1C5983;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px 44px; */
+    /* position: absolute; */
+    width: 135.88px;
+    height: 37px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #095051;
+    /* justify-content: center;
+    align-items: center;
+    padding: 15px 44px;
+    width: 213px;
+    height: 58px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    position: static;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #1C5983; */
 
 }
 section.game{
-    background-color: #22425E;
+    background-color: #095051;
+    width: 100%;
+    height: 100vh;
 }
 section.game iframe{
-    background-color: #22425E;
+    background-color: #095051;
     width: 100%;
-    height: 92vh;
+    height: 100%;
     /* overflow: hidden; */
-    border: 38px solid #22425E;
+    /* border: 1px solid #095051; */
     margin-bottom: 0px;
 
 }
@@ -273,8 +304,8 @@ section.game iframe{
 section.about{
     position: relative;
     max-width: 100%;
-    background-color: #17242F;
-    height: 90vh;
+    background-color: #095051;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     margin-top: 0px;
@@ -322,7 +353,7 @@ a.yrgo{
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
-    background-color: #17242F;
+    background-color: #095051;
     justify-content: center;
 }
 .card.one{
