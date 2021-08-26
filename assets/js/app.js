@@ -3,7 +3,7 @@ const storyPage= document.querySelector('.storyPage');
 
 // const scrollForm = document.querySelector('.btn.scroll');
 function scrollToStory() {
-    window.scrollTo({ top: 670,behavior: 'auto' });
+    window.scrollTo({ top: 730,behavior: 'auto' });
   };
   storyPage.addEventListener('click', ()=>{
     scrollToStory();
@@ -13,7 +13,7 @@ function scrollToStory() {
 const aboutPage= document.querySelector('.aboutPage');
 
 function scrollToAbout() {
-    window.scrollTo({ top: 1400, behavior: 'auto' });
+    window.scrollTo({ top: 1460, behavior: 'auto' });
   };
   aboutPage.addEventListener('click', ()=>{
     scrollToAbout();
