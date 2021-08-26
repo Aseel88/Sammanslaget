@@ -1,0 +1,22 @@
+{
+  "name": "sammanslaget",
+  "version": "1.0.0",
+  "description": "Number 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aseel88/Sammanslaget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aseel88/Sammanslaget/issues"
+  },
+  "homepage": "https://github.com/Aseel88/Sammanslaget#readme",
+  "devDependencies": {
+    "parcel": "*"
+  }
+}
