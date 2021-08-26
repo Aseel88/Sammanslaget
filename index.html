@@ -3,13 +3,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Sammanslaget Demo</title>
-    <link rel="shortcut icon" href="Demo Build/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="Demo Build/TemplateData/style.css">
+    <!-- <link rel="shortcut icon" href="Demo Build/TemplateData/favicon.ico"> -->
+    <!-- <link rel="stylesheet" href="Demo Build/TemplateData/style.css"> -->
     <!-- <meta charset="utf-8"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Sammanlaget">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
     <meta property="og:description" content="Sammanlaget Projekt">
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -25,18 +27,19 @@
         <nav class="primary">
             <ul>
                 <li><a href="index.html" class="homePage">Home</a></li>
-                <li><a href="" class="storyPage">Story</a></li>
-                <li><a href="" class="aboutPage">About us</a></li>                
+                <li><a href="#" class="storyPage">Story</a></li>
+                <li><a href="#" class="aboutPage">About us</a></li>                
             </ul>
         </nav>
     </header>
-        <br><br><br><br>  
+        <br> <br> <br>
+        <!--  <br> -->
     <main>
+        <img src="/Sammanslaget/assets/img/mainImg.png" alt="the main image with troll and forest">
         <div class="description">
             <div class="title">
                 <h1>
-                    Every little <br>
-                    helps
+                    Every little helps
 
                 </h1>
             </div>
@@ -52,33 +55,67 @@
     <section class="game"> 
         <iframe src="Demo Build/index.html" height="90vh" width="100%" title="Iframe Example"></iframe>
     </section>       
-    <!-- <section class="unity one"> -->
-        <!-- <div id="unity-container" class="unity-desktop">
-            <canvas id="unity-canvas" ></canvas>
-              <div id="unity-loading-bar">
-                <div id="unity-logo"></div>
-                <div id="unity-progress-bar-empty">
-                  <div id="unity-progress-bar-full"></div>
+  
+    <section class="about" id="aboutUs">
+        <h1> About us</h1>
+        <h4>Students from: <a class="yrgo" href="https://www.yrgo.se/">Yrgo</a></h4>
+        <div class="cards">           
+            <div class="card one" style="width: 20rem; height: 370px;">
+                <img src="/Sammanslaget/assets/img/DeviantArt.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">UX-Designer</h5>
+                    <h5 class="card-name">Josephine Anthony</h5>                    
+                    <p class="card-text">My role:
+                        Responsible for leading idea generation and design process and ensuring that the website and contributions are
+                        easy to use / experience. I am also responsible for sound.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
-              </div>
-              <div id="unity-mobile-warning">
-                WebGL builds are not supported on mobile devices.
-              </div>
-              <div id="unity-footer">
-                <div id="unity-webgl-logo"></div>
-                <div id="unity-fullscreen-button"></div>
-                <div id="unity-build-title">Sammanslaget Demo</div>
-              </div>
-            </div>             -->
-    <!-- </section> -->
-    <!-- <section class="unity two">
+            </div>
+            <div class="card two" style="width: 20rem; height: 370px;">
+                <img src="/Sammanslaget/assets/img/DeviantArt.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Game Programmer</h5>
+                <h5 class="card-name">Louise Buller</h5>                    
 
-    </section>
-    <section class="unity three">
+                <p class="card-text">My role:
+                    Develop interactivity and implement manufactured parts (such as sound, graphics, etc.).</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+            <div class="card three" style="width: 20rem; height: 370px;">
+                <img src="/Sammanslaget/assets/img/DeviantArt.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Web Developer</h5>
+                <h5 class="card-name">Aseel Mohamad</h5>                    
 
-    </section> -->
-    <section class="about">
+                <p class="card-text">My role:
+                    Enable the interactive story to exist on the web and work with interactivity and implementation.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+            <div class="card four" style="width: 20rem; height: 370px;">
+                <img src="/Sammanslaget/assets/img/DeviantArt.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Game Artist</h5>
+                <h5 class="card-name">Alexandra Söderström</h5>                    
 
+                <p class="card-text">My role:
+                    Produce graphics well adapted for a real-time application on the web.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+            <div class="card five" style="width: 20rem; height: 370px;">
+                <img src="/Sammanslaget/assets/img/DeviantArt.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Scriptwriter</h5>
+                <h5 class="card-name">Erik Engel</h5>                    
+
+                <p class="card-text">My role:
+                    Lead the work of developing the interactive story based on the group's concept.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- <main> -->
@@ -91,64 +128,10 @@
            <a href="#"><i class="fab fa-instagram"></i></a>
        </div> -->
     <!-- </main> -->
-    <!-- <script>
-        // var buildUrl = "Build";
-        // var loaderUrl = buildUrl + "/Demo Build.loader.js";
-        // var config = {
-        //   dataUrl: buildUrl + "/Demo Build.data.br",
-        //   frameworkUrl: buildUrl + "/Demo Build.framework.js.br",
-        //   codeUrl: buildUrl + "/Demo Build.wasm.br",
-        //   streamingAssetsUrl: "StreamingAssets",
-        //   companyName: "Number 6",
-        //   productName: "Sammanslaget Demo",
-        //   productVersion: "0.1",
-        // };
-  
-        // var container = document.querySelector("#unity-container");
-        // var canvas = document.querySelector("#unity-canvas");
-        // var loadingBar = document.querySelector("#unity-loading-bar");
-        // var progressBarFull = document.querySelector("#unity-progress-bar-full");
-        // var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-        // var mobileWarning = document.querySelector("#unity-mobile-warning");
-  
-        // // By default Unity keeps WebGL canvas render target size matched with
-        // // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-        // // Set this to false if you want to decouple this synchronization from
-        // // happening inside the engine, and you would instead like to size up
-        // // the canvas DOM size and WebGL render target sizes yourself.
-        // // config.matchWebGLToCanvasSize = false;
-  
-        // if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        //   container.className = "unity-mobile";
-        //   // Avoid draining fillrate performance on mobile devices,
-        //   // and default/override low DPI mode on mobile browsers.
-        //   config.devicePixelRatio = 1;
-        //   mobileWarning.style.display = "block";
-        //   setTimeout(() => {
-        //     mobileWarning.style.display = "none";
-        //   }, 5000);
-        // } else {
-        //   canvas.style.width = "1800px";
-        //   canvas.style.height = "900px";
-        // }
-        // loadingBar.style.display = "block";
-  
-        // var script = document.createElement("script");
-        // script.src = loaderUrl;
-        // script.onload = () => {
-        //   createUnityInstance(canvas, config, (progress) => {
-        //     progressBarFull.style.width = 100 * progress + "%";
-        //   }).then((unityInstance) => {
-        //     loadingBar.style.display = "none";
-        //     fullscreenButton.onclick = () => {
-        //       unityInstance.SetFullscreen(1);
-        //     };
-        //   }).catch((message) => {
-        //     alert(message);
-        //   });
-        // };
-        // document.body.appendChild(script);
-       </script> -->
+    
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
     <script src="assets/js/unity.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>

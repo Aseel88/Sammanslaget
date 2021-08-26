@@ -6,6 +6,8 @@
     --textColor:white;
 
     } */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sriracha&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -30,7 +32,7 @@ header{
     justify-content: space-around;
     position: fixed;
     margin-bottom: 50px;
-    height: 10vh;
+    height: 58px;
 }
 /* .logo{
     left: 0px;
@@ -83,7 +85,7 @@ a.title:hover{
     height: 80px;
 	list-style:none;
 	position: fixed;
-    background: #1C5983;
+    background: #22425E;
     color: white;
 	margin:0;
     padding-left: 70px;
@@ -100,8 +102,8 @@ a.title:hover{
 	font-size: 22px;
 	line-height:32px;
 	padding: 15px 25px;
-	background: #1C5983;
-	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+	background: #22425E;
+	font-family: 'Open Sans', sans-serif;
     -webkit-transition: all 150ms linear;
     -moz-transition: all 150ms linear;
     -ms-transition: all 150ms linear;
@@ -139,7 +141,7 @@ li a.homePage{
 }
 .primary ul li
 {
-	position:relative;
+	/* position:relative; */
 	float:left;
 	margin:0;
 	padding:0;
@@ -149,17 +151,60 @@ li a.homePage{
     background-color: #222326; 
 }
 main{
+    /* position: relative; */
     max-width: 100%;
     height: 90vh;
-    background-image:url("/Sammanslaget/assets/img/DeviantArt.jpeg") ;
-    background-repeat: no-repeat; 
-    background-size: cover;
+    /* background-image:inherit; */
+    /* background-image:url("/Sammanslaget/assets/img/mainImg.png") ; */
+    /* object-fit: cover; */
+    /* background-repeat: no-repeat;  */
+    /* background-size: cover; */
+    font-family: 'Open Sans', sans-serif;
+    z-index: -1;
+}
+main img{
+    /* object-fit: cover; */
+    /* position: relative; */
+
+    width: 100%;
+    height: 110%;
+}
+.description{
+    margin-top: 340px; 
+    position: absolute;
+}
+.title{
+    /* position: static; */
+    width: 536px;
+    height: 83px;
+    /* margin-left: 116px; */
+    /* margin-top: 340px;     */
+    font-family: 'Sriracha';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 127px;
+    color: #FFFFFF;   
+    /* position: absolute; */
+width: 118px;
+/* height: 0px;
+left: 120px; */
+top: 50px;
+z-index: 1;
+/* border: 4px solid #FFFFFF;  */
+
+}
+section.game{
+    background-color: #22425E;
 }
 section.game iframe{
-    background-color: yellow;
+    background-color: #22425E;
     width: 100%;
-    height: 90vh;
-    overflow: hidden;
+    height: 92vh;
+    /* overflow: hidden; */
+    border: 43px solid #22425E;
+    margin-bottom: 0px;
+
 }
 /* .unity.one{
     max-width: 100%;
@@ -176,8 +221,145 @@ section.game iframe{
     background-color: rgb(122, 75, 233);
     height: 90vh;
 } */
-.about{
+section.about{
+    position: relative;
     max-width: 100%;
-    background-color: rgb(211, 206, 223);
+    background-color: #17242F;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
+.about h1{
+    position: absolute;
+    width: 195px;
+    height: 52px;
+    left: 120px;
+    top: 15px;
+    color: #FFFFFF;   
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.about h4{
+    position: absolute;
+    width: 411px;
+    height: 52px;
+    left: 120px;
+    top: 70px;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+a.yrgo{
+    color: #FFFFFF;
+    /* text-decoration: none; */
+}
+.cards{
+    /* display: flex;
+    flex-direction: row; */
+    position: absolute;
+    top: 200px;
+    
+    /* justify-content: space-around; */
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    background-color: #17242F;
+    justify-content: center;
+}
+.card.one{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    /* top: 274px; */
+}
+.card.two{
+    left: 370px;
+    position: absolute;
+    /* top: 274px; */
+}
+.card.three{
+    left: 620px;
+    position: absolute;
+    /* top: 274px;     */
+}
+.card.four{
+    left: 886px;
+    position: absolute;
+    /* top: 274px;        */
+}
+.card.five{
+    left: 1136px;
+    position: absolute;
+    /* top: 274px;             */
+}
+.card-body{
+    padding: 0px;
+    text-align: start;
+    width: 100px;
+    /* display: flex;
+    flex-direction: column;   */
+  
+
+    /* background-color: yellow; */
+}
+.card-img-top{
+    width: 172px;
+    height: 172px;
+    /* border: 2px solid blue; */
+    border-radius: 100%;
+    /* background: url(/Sammanslaget/assets/img/DeviantArt.jpeg); */
+}
+.card-name{
+    position: absolute;
+    width: 178.7px;
+    height: 10px;
+    /* left: 120px; */
+    top: 225px;  
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;    
+    color: #FFFFFF;
+}
+.card-title{
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    /* left: 120px; */
+    top: 200px;  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #3AB8FF;
+}
+.card-text{
+    position: absolute;
+    width: 196.96px;
+    height: 230px;
+    /* left: 120px; */
+    top: 250px;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150.69%;/* or 23px */
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
