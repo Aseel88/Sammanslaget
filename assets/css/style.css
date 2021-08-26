@@ -356,6 +356,9 @@ a.yrgo{
     background-color: #095051;
     justify-content: center;
 }
+div.card{
+    border: none;
+}
 .card.one{
     display: flex;
     flex-direction: column;
