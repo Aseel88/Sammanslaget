@@ -1,6 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Rubik+Mono+One&display=swap");
-
-:root {
+/*:root {
     --mainColor: #CE1069;
     --buttonOnHover: rgb(252, 213, 213);
     --textColor:white;
@@ -20,13 +18,10 @@ body{
     justify-content: center;
     max-width: 100%;
     overflow-x: hidden;
-    /* align-items: center; */
-    /* font-family: Helvetica, sans-serif; */
 }
 header{
     width: 100%;
     padding: 10px;
-    /* padding-left: 30px; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -36,64 +31,15 @@ header{
 ul{
     height: 43px;
 }
-/* .logo{
-    left: 0px;
-    top: 0px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    background: #2d2f33;
-    color: rgb(163, 16, 16);
-    margin:0;
-    padding:0;
-    width: 20%;
-}
-a.title{
-    display: block;
-	color: #9C9C9C; 
-	text-decoration:none;
-	font-weight:1000;
-	font-size: 22px;
-	line-height:32px;
-	padding: 15px 15px;
-	background: #2d2f33;
-	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-    -webkit-transition: all 150ms linear;
-    -moz-transition: all 150ms linear;
-    -ms-transition: all 150ms linear;
-    -o-transition: all 150ms linear;
-    transition: all 150ms linear;
-
-}
-a.title:hover{
-    color: white;
-    background-color: #2d2f33; 
-    text-shadow: 0 0 2px white;
-    -webkit-text-shadow: 0 0 2px white;
-    -moz-text-shadow: 0 0 2px white;
-    -o-text-shadow: 0 0 2px white;
-    -ms-text-shadow: 0 0 2px white;
-    -webkit-transition: all 150ms linear;
-    -moz-transition: all 150ms linear;
-    -ms-transition: all 150ms linear;
-    -o-transition: all 150ms linear;
-    transition: all 150ms linear;
-} */
 .primary ul{
     right: 0px;
-    top: 0px;
-    /* height: 80px; */
+    top: 0px;   
 	list-style:none;
 	position: fixed;
     background: #095051;
     color: white;
 	margin:0;
     padding-left: 70px;
-
-	/* padding:0; */
-    /* display: inline-table; */
     width: 100%;
 }
 .primary ul a{
@@ -113,10 +59,22 @@ a.title:hover{
     -o-transition: all 150ms linear;
     transition: all 150ms linear;
 }
-.primary ul a:hover{
-    
-	color: white;
-    /* background-color: #798cb1;  */
+button.storyPage,
+button.aboutPage{
+    border: none;
+	color: white; 
+	text-decoration:none;
+	font-weight:400;
+	font-size: 15px;
+	line-height:32px;
+	padding-left: 15px ;
+	padding-right: 80px ;
+	background: #095051;
+}
+.primary ul a:hover,
+button.storyPage:hover,
+button.aboutPage:hover{    
+	color: white;   
     text-shadow: 0 0 2px white;
     -webkit-text-shadow: 0 0 2px white;
     -moz-text-shadow: 0 0 2px white;
@@ -128,25 +86,23 @@ a.title:hover{
     -o-transition: all 150ms linear;
     transition: all 150ms linear;
 }
-li a.homePage{
-    /* text-decoration: underline; */
-    /* color: red; */
+li a.homePage{   
     display: flex;
     flex-direction: column;
 }
-.primary ul a:active
+.primary ul a:active,
+button.storyPage:active,
+button.aboutPage:active
 {
-	/* color: #8ABF29;
-    background-color: #2d2f33; 
+    text-decoration: underline;	
     -webkit-transition: all 50ms linear;
     -moz-transition: all 50ms linear;
     -ms-transition: all 50ms linear;
     -o-transition: all 50ms linear;
-    transition: all 50ms linear; */
+    transition: all 50ms linear;
 }
 .primary ul li
 {
-	/* position:relative; */
 	float:left;
 	margin:0;
 	padding:0;
@@ -156,29 +112,18 @@ li a.homePage{
     background-color: #222326; 
 }
 main{
-    /* margin: 0px; */
-    /* position: relative; */
     max-width: 100%;
     height: 100vh;
     background-image:inherit;
     background-image:url("../img/mailImgfinal.png") ;
     object-fit: cover;
-    background-repeat: no-repeat; 
-    /* background-position: center; */
+    background-repeat: no-repeat;    
     background-size: cover;
-    font-family: 'Open Sans', sans-serif;
-    /* z-index: -1; */
+    font-family: 'Open Sans', sans-serif;    
 }
 main img{
-    /* object-fit: cover; */
-    /* position: relative; */
-/* margin-top: 188px; */
     width: 100%;
     height: 120%;
-}
-.description{
-    /* margin-top: 340px;  */
-    /* position: absolute; */
 }
 div.title,
 div.text,
@@ -198,7 +143,6 @@ div.interactive p{
     color: #FFFFFF;
 }
 div.title h1{
-    /* position: static; */
     width: 405px;
     height: 83px;
     margin-left: 100px;
@@ -208,20 +152,11 @@ div.title h1{
     font-weight: normal;
     font-size: 54px;
     line-height: 96px;
-    color: #FFFFFF;   
-    /* position: absolute; */
-/* width: 118px; */
-/* height: 0px;
-left: 120px; */
-/* top: 50px; */
-/* z-index: 1; */
-/* border: 4px solid #FFFFFF;  */
-
+    color: #FFFFFF; 
 }
 svg.underline {
     margin-left: 100px;
     margin-top: -32px;
-
 }
 div.text p{
     width: 296px;
@@ -236,12 +171,9 @@ div.text p{
     color: #FFFFFF;
 }
 button.story{
-    display: flex;
-    /* flex-direction: row; */
+    display: flex;  
     justify-content: center;
-    align-items: center;
-    /* padding: 15px 44px; */
-    /* position: absolute; */
+    align-items: center;   
     width: 135.88px;
     height: 37px;
     margin-left: 200px;
@@ -255,22 +187,6 @@ button.story{
     line-height: 20px;
     letter-spacing: 0.05em;
     color: #095051;
-    /* justify-content: center;
-    align-items: center;
-    padding: 15px 44px;
-    width: 213px;
-    height: 58px;
-    background: #FFFFFF;
-    border-radius: 100px;
-    position: static;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.05em;
-    color: #1C5983; */
-
 }
 section.game{
     background-color: #095051;
@@ -280,27 +196,9 @@ section.game{
 section.game iframe{
     background-color: #095051;
     width: 100%;
-    height: 100%;
-    /* overflow: hidden; */
-    /* border: 1px solid #095051; */
+    height: 100%;  
     margin-bottom: 0px;
-
 }
-/* .unity.one{
-    max-width: 100%;
-    background-color: black;
-    height: 90vh;
-}
-.unity.two{
-    max-width: 100%;
-    background-color: rgb(117, 114, 114);
-    height: 90vh;
-}
-.unity.three{
-    max-width: 100%;
-    background-color: rgb(122, 75, 233);
-    height: 90vh;
-} */
 section.about{
     position: relative;
     max-width: 100%;
@@ -311,12 +209,7 @@ section.about{
     margin-top: 0px;
     font-family: 'Open Sans', sans-serif;
 }
-.about h1{
-    /* position: absolute; */
-    /* width: 195px; */
-    /* height: 52px; */
-    /* left: 120px; */
-    /* top: 15px; */
+.about h1{   
     color: #FFFFFF;   
     font-size: 24px;
     font-style: normal;
@@ -326,11 +219,6 @@ section.about{
     text-align: left;
 }
 .about h4{
-    /* position: absolute; */
-    /* width: 411px; */
-    /* height: 52px; */
-    /* left: 120px; */
-    /* top: 70px;     */
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -339,38 +227,29 @@ section.about{
     margin-top: 20px;
 }
 a.yrgo{
-    color: #FFFFFF;
-    /* text-decoration: none; */
+    color: #FFFFFF;    
 }
 div.team{
-     display: flex;
+    display: flex;
     flex-direction: row;
     margin-left:88px;
-    margin-top: 15px;
-    /* padding-right: 50px; */
-   justify-content: space-around;
+    margin-top: 15px;    
+    justify-content: space-around;
     width: 250px; 
-    height: 50px; 
-    /* background-color: red; */
+    height: 50px;    
     position: absolute;
 
 }
 svg.last{
-    margin-top: 17px;
-    /* padding-left: 5px; */
+    margin-top: 17px;    
 }
-.cards{
-    /* display: flex;
-    flex-direction: row; */
+.cards{   
     position: absolute;
-    top: 150px;
-    
-    /* justify-content: space-around; */
+    top: 150px;   
 }
 .card{
     display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
+    flex-direction: column;   
     background-color: #042C2D;
     justify-content: center;
 }
@@ -381,51 +260,38 @@ div.card{
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 100px;
-    /* top: 274px; */
+    left: 100px;    
 }
 .card.two{
     left: 370px;
-    position: absolute;
-    /* top: 274px; */
+    position: absolute;   
 }
 .card.three{
     left: 620px;
-    position: absolute;
-    /* top: 274px;     */
+    position: absolute;    
 }
 .card.four{
     left: 886px;
-    position: absolute;
-    /* top: 274px;        */
+    position: absolute;    
 }
 .card.five{
     left: 1136px;
-    position: absolute;
-    /* top: 274px;             */
+    position: absolute;   
 }
 .card-body{
     padding: 0px;
     text-align: start;
-    width: 100px;
-    /* display: flex;
-    flex-direction: column;   */
-  
-
-    /* background-color: yellow; */
+    width: 100px;    
 }
 .card-img-top{
     width: 172px;
-    height: 172px;
-    /* border: 2px solid blue; */
-    border-radius: 100%;
-    /* background: url(/Sammanslaget/assets/img/DeviantArt.jpeg); */
+    height: 172px;    
+    border-radius: 100%;   
 }
 .card-name{
     position: absolute;
     width: 178.7px;
-    height: 10px;
-    /* left: 120px; */
+    height: 10px;  
     top: 225px;  
     font-style: normal;
     font-weight: bold;
@@ -438,8 +304,7 @@ div.card{
 .card-title{
     position: absolute;
     width: 150px;
-    height: 10px;
-    /* left: 120px; */
+    height: 10px; 
     top: 200px;  
     font-style: normal;
     font-weight: normal;
@@ -453,13 +318,12 @@ div.card{
 .card-text{
     position: absolute;
     width: 196.96px;
-    height: 138px;
-    /* left: 120px; */
+    height: 138px;   
     top: 250px;    
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
-    line-height: 150.69%;/* or 23px */
+    line-height: 150.69%;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
