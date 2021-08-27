@@ -8,7 +8,7 @@ An interactive story which build on the web using:
 - WebGl.
 - HTML, CSS, JavaScript.
 
-_Nota bene: This game is set up for desktop usage and the game stats are fully functional on any browser except for Brave._
+_Nota bene: This game is set up for desktop usage.
 
 #  Installation
 
