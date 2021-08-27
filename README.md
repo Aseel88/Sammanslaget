@@ -8,7 +8,7 @@ An interactive story which build on the web using:
 - WebGl.
 - HTML, CSS, JavaScript.
 
-_Nota bene: This game is set up for desktop usage.
+ Note: This game is set up for desktop usage.
 
 #  Installation
 
