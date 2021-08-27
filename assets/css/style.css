@@ -147,7 +147,7 @@ div.title h1{
     width: 573px;
     height: 83px;
     margin-left: 200px;
-    margin-top: -15px;    
+    margin-top: -30px;    
     font-family: 'Sriracha';
     font-style: normal;
     font-weight: normal;
@@ -178,7 +178,7 @@ button.story{
     width: 172.6px;
     height: 47px;
     margin-left: 325px;
-    margin-top: 25px;
+    margin-top: 35px;
     background: #FFFFFF;
     border-radius: 100px;
     font-family: 'Open Sans';
