@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Sammanslaget Demo</title>
+    <title>Unity WebGL Player | Every Little Helps</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1440 height=600></canvas>
+      <canvas id="unity-canvas" width=1500 height=800></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <!-- <div id="unity-mobile-warning">
+      <div id="unity-mobile-warning">
         WebGL builds are not supported on mobile devices.
       </div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Sammanslaget Demo</div>
-      </div> -->
-    </div> 
+        <div id="unity-build-title">Every Little Helps</div>
+      </div>
+    </div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Demo Build.loader.js";
@@ -34,7 +34,7 @@
         codeUrl: buildUrl + "/Demo Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Number 6",
-        productName: "Sammanslaget Demo",
+        productName: "Every Little Helps",
         productVersion: "0.1",
       };
 
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1440px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1500px";
+        canvas.style.height = "800px";
       }
       loadingBar.style.display = "block";
 
