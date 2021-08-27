@@ -1,7 +1,6 @@
 //scroll down to the story section
 const storyPage= document.querySelector('.storyPage');
 
-// const scrollForm = document.querySelector('.btn.scroll');
 function scrollToStory() {
     window.scrollTo({ top: 927,behavior: 'auto' });
   };
