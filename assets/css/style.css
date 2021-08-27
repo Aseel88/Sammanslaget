@@ -263,10 +263,16 @@ div.team{
 svg.last{
     margin-top: 17px;    
 }
-.cards{   
+div.cards{   
     position: absolute;
     top: 150px; 
-    margin-left: 100px;
+    margin-left: 107px;
+    /* width: 120%; 
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 200px;
+    margin-top: 15px;     */
+    /* justify-content: space-between;    */ 
 }
 .card{
     display: flex;
@@ -348,4 +354,31 @@ div.card{
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-
+.mails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    position: absolute;
+    width: 65%;
+    height: 138px; 
+    /* border: 2px solid white; */
+    top: 690px;    
+    margin-left: 200px;
+    color: white;
+}
+.mail{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150.69%;
+}
+.far.fa-envelope{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
