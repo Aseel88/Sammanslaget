@@ -3,7 +3,7 @@ const storyPage= document.querySelector('.storyPage');
 
 // const scrollForm = document.querySelector('.btn.scroll');
 function scrollToStory() {
-    window.scrollTo({ top: 730,behavior: 'auto' });
+    window.scrollTo({ top: 927,behavior: 'auto' });
   };
   storyPage.addEventListener('click', ()=>{
     scrollToStory();
@@ -14,7 +14,7 @@ function scrollToStory() {
 const story= document.querySelector('.story');
 
 function scrollToViewStory() {
-    window.scrollTo({ top: 710,behavior: 'smooth' });
+    window.scrollTo({ top: 926,behavior: 'smooth' });
   };
   story.addEventListener('click', ()=>{
     scrollToViewStory();
@@ -25,7 +25,7 @@ function scrollToViewStory() {
 const aboutPage= document.querySelector('.aboutPage');
 
 function scrollToAbout() {
-    window.scrollTo({ top: 1460, behavior: 'auto' });
+    window.scrollTo({ top: 1900, behavior: 'auto' });
   };
   aboutPage.addEventListener('click', ()=>{
     scrollToAbout();
