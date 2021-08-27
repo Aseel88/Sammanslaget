@@ -190,13 +190,15 @@ button.story{
     color: #095051;
 }
 section.game{
-    background-color: #042C2D;
+    background-color: #084344;
     width: 100%;
     height: 100vh;
 }
 section.game h1{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 85px;
+    /* margin-bottom: -20px; */
+
     color: white;
     width: 164px;
     height: 30px;
@@ -207,10 +209,12 @@ section.game h1{
     line-height: 33px;
 }
 section.game iframe{
-    background-color: #042C2D;
+    background-color: #084344;
     width: 100%;
     height: 100%;  
     margin-bottom: 0px;
+    margin-top: -5px;
+
 }
 section.about{
     position: relative;
