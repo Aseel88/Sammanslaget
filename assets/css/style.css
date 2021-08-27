@@ -39,7 +39,7 @@ ul{
     background: #095051;
     color: white;
 	margin:0;
-    padding-left: 70px;
+    padding-left: 188px;
     width: 100%;
 }
 .primary ul a{
@@ -190,13 +190,15 @@ button.story{
     color: #095051;
 }
 section.game{
-    background-color: #042C2D;
+    background-color: #084344;
     width: 100%;
     height: 100vh;
 }
 section.game h1{
-    margin-top: 10px;
-    margin-left: 85px;
+    margin-top: 20px;
+    margin-left: 200px;
+    /* margin-bottom: -20px; */
+
     color: white;
     width: 164px;
     height: 30px;
@@ -207,10 +209,12 @@ section.game h1{
     line-height: 33px;
 }
 section.game iframe{
-    background-color: #042C2D;
+    background-color: #084344;
     width: 100%;
     height: 100%;  
     margin-bottom: 0px;
+    margin-top: -5px;
+
 }
 section.about{
     position: relative;
@@ -230,6 +234,8 @@ section.about{
     line-height: 54px;
     letter-spacing: 0em;
     text-align: left;
+    padding-left: 5px;
+
 }
 .about h4{
     font-style: normal;
@@ -238,6 +244,8 @@ section.about{
     line-height: 20px;
     color: #FFFFFF;
     margin-top: 20px;
+    padding-right: 2px;
+
 }
 a.yrgo{
     color: #FFFFFF;    
@@ -245,20 +253,26 @@ a.yrgo{
 div.team{
     display: flex;
     flex-direction: row;
-    margin-left:88px;
+    margin-left: 200px;
     margin-top: 15px;    
     justify-content: space-around;
-    width: 250px; 
+    width: 280px; 
     height: 50px;    
     position: absolute;
-
 }
 svg.last{
     margin-top: 17px;    
 }
-.cards{   
+div.cards{   
     position: absolute;
-    top: 150px;   
+    top: 150px; 
+    margin-left: 107px;
+    /* width: 120%; 
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 200px;
+    margin-top: 15px;     */
+    /* justify-content: space-between;    */ 
 }
 .card{
     display: flex;
@@ -303,7 +317,7 @@ div.card{
 }
 .card-name{
     position: absolute;
-    width: 178.7px;
+    width: 185px;
     height: 10px;  
     top: 225px;  
     font-style: normal;
@@ -340,4 +354,31 @@ div.card{
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-
+.mails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    position: absolute;
+    width: 65%;
+    height: 138px; 
+    /* border: 2px solid white; */
+    top: 690px;    
+    margin-left: 200px;
+    color: white;
+}
+.mail{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150.69%;
+}
+.far.fa-envelope{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
