@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Sammanslaget Demo</title>
-    <!-- <link rel="shortcut icon" href="Demo Build/TemplateData/favicon.ico"> -->
-    <!-- <link rel="stylesheet" href="Demo Build/TemplateData/style.css"> -->
-    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Sammanlaget">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Every Little Helps">
+    <meta property="og:url" content="https://everylittlehelps.netlify.app/">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/879296057836716074/880535437414912040/Skarmavbild_2021-08-26_kl._21.32.07.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
     <meta property="og:description" content="Sammanlaget Projekt">
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
-    <!-- <link rel="shortcut icon" type="image/png" href=""/> -->
-    <title> Sammanlaget </title>
+    <link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/attachments/879296057836716074/879735572015480872/image0.png"/>
+    <title> Every Little Helps </title>
 </head>
 <body>
-    <header>
-        <!-- <div class="logo">
-            <a class="title" href="#">Title</a>
-        </div> -->
+    <header>      
         <nav class="primary">
             <ul>
-                <li><a href="index.html" class="homePage">Home</a>
-                    <svg width="42" height="4" viewBox="0 0 118 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li class="svg">
+                    <a href="index.html" class="homePage">Home
+                    <svg width="42" height="2" viewBox="0 0 118 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 2H118" stroke="white" stroke-width="4"/>
-                        </svg> 
+                    </svg> </a>
                 </li>
-                <li><a href="#" class="storyPage">Story</a></li>
-                <li><a href="#" class="aboutPage">About us</a></li>                
+                <li>
+                    <button class="storyPage">Story</button>
+                    <!-- <a href="#" class="storyPage">Story</a> -->
+                </li>
+                <li>
+                    <button class="aboutPage">About</button>
+                    <!-- <a href="#" class="aboutPage">About us</a> -->
+                </li>                
             </ul>
         </nav>
-    </header>
-        <br> <br> <br>
-        <!--  <br> -->
+    </header>    
     <main>
         <!-- <img src="/Sammanslaget/assets/img/mainImgSmall.png" alt="the main image with troll and forest"> -->
         <div class="description">
+            <div class="interactive">
+                <p>INTERACTIVE STORY</p>
+            </div>
             <div class="title">
-                <h1>
-                    Every little helps
-                </h1>
+                <h1>Every little helps</h1>                    
+                    <!-- <svg class = "underline" width="118" height="4" viewBox="0 0 70 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2H70" stroke="white" stroke-width="3"/>
+                    </svg>                 -->
+                    <svg class = "underline" width="118" height="5" viewBox="0 0 118 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.49112H118" stroke="white" stroke-width="4"/>
+                        </svg>
             </div>
             <div class="text">
-                <p>Come into the woods. Where streams and trees can talk. Will you reach the end? On your attitude that depends...</p>
+                <p>Come into the woods. Where streams and <br>trees can talk. Will you reach the end?<br> On your attitude that depends...</p>
 
             </div>
             <button class="story">
@@ -56,12 +60,17 @@
         </div>
     </main> 
     <section class="game"> 
+        <h1>The Story</h1>
         <iframe src="Demo Build/index.html" height="90vh" width="100%" title="Iframe Example"></iframe>
-    </section>       
-  
+    </section>     
     <section class="about" id="aboutUs">
-        <h1> About us</h1>
-        <h4>Students from: <a class="yrgo" href="https://www.yrgo.se/">Yrgo</a></h4>
+        <div class="team">
+            <h1> About us</h1>
+            <svg class ="last"width="2" height="25" viewBox="0 0 2 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 25L1 -5.96046e-07" stroke="white"/>
+            </svg>
+            <h4>Students from: <a class="yrgo" href="https://www.yrgo.se/">Yrgo</a></h4>
+        </div>
         <div class="cards">           
             <div class="card one" style="width: 20rem; height: 370px;">
                 <img src="assets/img/Josephine.png" class="card-img-top" alt="...">
@@ -71,75 +80,60 @@
                     <p class="card-text">My role:
                         Responsible for leading idea generation and design process and ensuring that the website and contributions are
                         easy to use / experience. I am also responsible for sound.</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
             <div class="card two" style="width: 20rem; height: 370px;">
                 <img src="assets/img/Louise.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Game Programmer</h5>
-                <h5 class="card-name">Louise Buller</h5>                    
+                    <h5 class="card-title">Game Programmer</h5>
+                    <h5 class="card-name">Louise Buller</h5>                    
 
-                <p class="card-text">My role:
-                    Develop interactivity and implement manufactured parts (such as sound, graphics, etc.).</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <p class="card-text">My role:
+                        Develop interactivity and implement manufactured parts (such as sound, graphics, etc.).</p>                
                 </div>
             </div>
             <div class="card three" style="width: 20rem; height: 370px;">
                 <img src="assets/img/Aseel.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Web Developer</h5>
-                <h5 class="card-name">Aseel Mohamad</h5>                    
-
-                <p class="card-text">My role:
-                    Enable the interactive story to exist on the web and work with interactivity and implementation.</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <h5 class="card-title">Web Developer</h5>
+                    <h5 class="card-name">Aseel Mohamad</h5>                 
+                    <p class="card-text">My role:
+                        Enable the interactive story to exist on the web and work with interactivity and implementation.</p>               
                 </div>
             </div>
             <div class="card four" style="width: 20rem; height: 370px;">
                 <img src="assets/img/Alexandra.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Game Artist</h5>
-                <h5 class="card-name">Alexandra Söderström</h5>                    
-
-                <p class="card-text">My role:
-                    Produce graphics well adapted for a real-time application on the web.</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <h5 class="card-title">Game Artist</h5>
+                    <h5 class="card-name">Alexandra Söderström</h5>                   
+                    <p class="card-text">My role:
+                        Produce graphics well adapted for a real-time application on the web.</p>              
                 </div>
             </div>
             <div class="card five" style="width: 20rem; height: 370px;">
                 <img src="assets/img/Erik.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Scriptwriter</h5>
-                <h5 class="card-name">Erik Engel</h5>                    
+                    <h5 class="card-title">Scriptwriter</h5>
+                    <h5 class="card-name">Erik Engel</h5>                    
 
-                <p class="card-text">My role:
-                    Lead the work of developing the interactive story based on the group's concept.</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <p class="card-text">My role:
+                        Lead the work of developing the interactive story based on the group's concept.</p>
                 </div>
             </div>
         </div>
+        <div class="mail">
+            <div class="mail first">
+                
+            </div>
+        </div>
     </section>
-
-    <!-- <main> -->
-       <!-- <h1>Title</h1>
-       <h3>Description</h3>
-       <button>Play</button> -->
-       <!-- <div class="links">
-           <a href="#"><i class="fab fa-facebook-square"></i></a>
-           <a href="#"><i class="fab fa-youtube"></i></a>
-           <a href="#"><i class="fab fa-instagram"></i></a>
-       </div> -->
-    <!-- </main> -->
-    
-       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-
-    <script src="assets/js/unity.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/unity.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script> -->
     <script src="assets/js/app.js"></script>
     
 

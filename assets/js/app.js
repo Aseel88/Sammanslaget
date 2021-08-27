@@ -3,25 +3,30 @@ const storyPage= document.querySelector('.storyPage');
 
 // const scrollForm = document.querySelector('.btn.scroll');
 function scrollToStory() {
-    window.scrollTo({ top: 670,behavior: 'auto' });
+    window.scrollTo({ top: 927,behavior: 'auto' });
   };
   storyPage.addEventListener('click', ()=>{
     scrollToStory();
 })
 
+
+//scroll down to the story section
+const story= document.querySelector('.story');
+
+function scrollToViewStory() {
+    window.scrollTo({ top: 926,behavior: 'smooth' });
+  };
+  story.addEventListener('click', ()=>{
+    scrollToViewStory();
+})
+
+
 //scroll down to the about section
 const aboutPage= document.querySelector('.aboutPage');
 
 function scrollToAbout() {
-    window.scrollTo({ top: 1400, behavior: 'auto' });
+    window.scrollTo({ top: 1900, behavior: 'auto' });
   };
   aboutPage.addEventListener('click', ()=>{
     scrollToAbout();
 })
-
-// ,behavior: 'smooth'
-// const aboutPage= document.querySelector('.aboutPage');
-// aboutPage.addEventListener('click', ()=>{
-
-// document.getElementById("aboutUs").scrollIntoView();
-// })
